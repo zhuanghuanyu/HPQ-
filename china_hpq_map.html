@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7a8da0d13f66d2ee28495828817a7f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7a8da0d13f66d2ee28495828817a7f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7a8da0d13f66d2ee28495828817a7f7 = L.map(
+                "map_c7a8da0d13f66d2ee28495828817a7f7",
+                {
+                    center: [35.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5503ef0c24d4af55492fadb22de5f71 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d5503ef0c24d4af55492fadb22de5f71.addTo(map_c7a8da0d13f66d2ee28495828817a7f7);
+        
+    
+            var marker_cluster_788d80c58bd7992eafcd82a655ee9636 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_77add453d4aacbfa3b7274a261ac4301 = L.circleMarker(
+                [30.8101669, 108.4034084],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_3db1859c39e88ae479246ba610466f96 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_295cf580f272bed39a71e8a82a875eb3 = $(`<div id="html_295cf580f272bed39a71e8a82a875eb3" style="width: 100.0%; height: 100.0%;">         <b>Chongqing Xianghong Linfeng New Material Co.</b><br>         <b>Location</b>: Chongqing<br>         <b>Capacity</b>: 100.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_3db1859c39e88ae479246ba610466f96.setContent(html_295cf580f272bed39a71e8a82a875eb3);
+            
+        
+
+        circle_marker_77add453d4aacbfa3b7274a261ac4301.bindPopup(popup_3db1859c39e88ae479246ba610466f96)
+        ;
+
+        
+    
+    
+            var circle_marker_b470a991c96100b9d251273010c9a140 = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_3adb607e7865156df2d8ee79ac0e2db6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a8ce2ac5914fe34966d69ff9e3ee851 = $(`<div id="html_3a8ce2ac5914fe34966d69ff9e3ee851" style="width: 100.0%; height: 100.0%;">         <b>Hongwei high-purity quartz materials</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥70.0M     </div>`)[0];
+                popup_3adb607e7865156df2d8ee79ac0e2db6.setContent(html_3a8ce2ac5914fe34966d69ff9e3ee851);
+            
+        
+
+        circle_marker_b470a991c96100b9d251273010c9a140.bindPopup(popup_3adb607e7865156df2d8ee79ac0e2db6)
+        ;
+
+        
+    
+    
+            var circle_marker_ef1c87c1f510f191592ed3a3339f3a37 = L.circleMarker(
+                [34.7533392, 113.6599983],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f03b20", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_e9787938a1526351614ceed295f020de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d81f6acfd3318f844188b11bce22224 = $(`<div id="html_2d81f6acfd3318f844188b11bce22224" style="width: 100.0%; height: 100.0%;">         <b>Henan Provincial Science and Technology Investment Co.</b><br>         <b>Location</b>: Zhengzhou<br>         <b>Capacity</b>: 300.0 kMT/yr<br>         <b>Investment</b>: ¥11204.0M     </div>`)[0];
+                popup_e9787938a1526351614ceed295f020de.setContent(html_2d81f6acfd3318f844188b11bce22224);
+            
+        
+
+        circle_marker_ef1c87c1f510f191592ed3a3339f3a37.bindPopup(popup_e9787938a1526351614ceed295f020de)
+        ;
+
+        
+    
+    
+            var circle_marker_61102fbaa832ced770f71dcee916b493 = L.circleMarker(
+                [39.4602947, 108.8134284],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_a95d0ea6f0724d182b18eb862014f10f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e10d4021727a4d175dfdddd5d2f375ef = $(`<div id="html_e10d4021727a4d175dfdddd5d2f375ef" style="width: 100.0%; height: 100.0%;">         <b>Huasi (Inner Mongolia) New Material Technology Co.</b><br>         <b>Location</b>: Ordos<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_a95d0ea6f0724d182b18eb862014f10f.setContent(html_e10d4021727a4d175dfdddd5d2f375ef);
+            
+        
+
+        circle_marker_61102fbaa832ced770f71dcee916b493.bindPopup(popup_a95d0ea6f0724d182b18eb862014f10f)
+        ;
+
+        
+    
+    
+            var circle_marker_9002fd15c4de7376b7e5e2d70a09e92b = L.circleMarker(
+                [31.9215518, 120.2808847],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee79b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_ae5d137c811782133863b0445f1849ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_165c46e53f371f4b0b63a68547926673 = $(`<div id="html_165c46e53f371f4b0b63a68547926673" style="width: 100.0%; height: 100.0%;">         <b>New Shengjin Semiconductor New Material Project</b><br>         <b>Location</b>: Jiangyin<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥500.0M     </div>`)[0];
+                popup_ae5d137c811782133863b0445f1849ef.setContent(html_165c46e53f371f4b0b63a68547926673);
+            
+        
+
+        circle_marker_9002fd15c4de7376b7e5e2d70a09e92b.bindPopup(popup_ae5d137c811782133863b0445f1849ef)
+        ;
+
+        
+    
+    
+            var circle_marker_657378542712e384c6c7135a6fba33da = L.circleMarker(
+                [30.4049826, 112.8940372],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_60448a281f8f49fc170bb2cf021ac33d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_078e74990510fc7804e98d0e27a5aa97 = $(`<div id="html_078e74990510fc7804e98d0e27a5aa97" style="width: 100.0%; height: 100.0%;">         <b>Qianjiang Zhutong New Material Technology Co.</b><br>         <b>Location</b>: Qianjiang<br>         <b>Capacity</b>: 3.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_60448a281f8f49fc170bb2cf021ac33d.setContent(html_078e74990510fc7804e98d0e27a5aa97);
+            
+        
+
+        circle_marker_657378542712e384c6c7135a6fba33da.bindPopup(popup_60448a281f8f49fc170bb2cf021ac33d)
+        ;
+
+        
+    
+    
+            var circle_marker_b0a5210a8ba7a8be6b48ff2f22735d72 = L.circleMarker(
+                [33.5826865, 114.0107357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee399", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_53125e6eeaf81026d7b01b3d16490080 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ea297a4c16c884854ff8dafa0e55d5a = $(`<div id="html_3ea297a4c16c884854ff8dafa0e55d5a" style="width: 100.0%; height: 100.0%;">         <b>Henan GCL Silica-based New Material Company</b><br>         <b>Location</b>: Luohe<br>         <b>Capacity</b>: 30.0 kMT/yr<br>         <b>Investment</b>: ¥700.0M     </div>`)[0];
+                popup_53125e6eeaf81026d7b01b3d16490080.setContent(html_3ea297a4c16c884854ff8dafa0e55d5a);
+            
+        
+
+        circle_marker_b0a5210a8ba7a8be6b48ff2f22735d72.bindPopup(popup_53125e6eeaf81026d7b01b3d16490080)
+        ;
+
+        
+    
+    
+            var circle_marker_2e9012539d1b352c12168b51879e7992 = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee59a", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_0dd73a363d68086973aef781358d2354 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_770f6112a746bc45a2f5e85ad18c8b81 = $(`<div id="html_770f6112a746bc45a2f5e85ad18c8b81" style="width: 100.0%; height: 100.0%;">         <b>Pacific Quartz</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥600.0M     </div>`)[0];
+                popup_0dd73a363d68086973aef781358d2354.setContent(html_770f6112a746bc45a2f5e85ad18c8b81);
+            
+        
+
+        circle_marker_2e9012539d1b352c12168b51879e7992.bindPopup(popup_0dd73a363d68086973aef781358d2354)
+        ;
+
+        
+    
+    
+            var circle_marker_93267955eadeeb668c7dadc83f6fa9d0 = L.circleMarker(
+                [39.4857837, 106.900469],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdd68f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_68bb0386d114aa72daa23f11131a4c57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd48b6a805c696054e746248e0774f5b = $(`<div id="html_bd48b6a805c696054e746248e0774f5b" style="width: 100.0%; height: 100.0%;">         <b>Inner Mongolia Wanxing Silicon-based Advanced Materials</b><br>         <b>Location</b>: Wuhai<br>         <b>Capacity</b>: 870.0 kMT/yr<br>         <b>Investment</b>: ¥1540.0M     </div>`)[0];
+                popup_68bb0386d114aa72daa23f11131a4c57.setContent(html_bd48b6a805c696054e746248e0774f5b);
+            
+        
+
+        circle_marker_93267955eadeeb668c7dadc83f6fa9d0.bindPopup(popup_68bb0386d114aa72daa23f11131a4c57)
+        ;
+
+        
+    
+    
+            var circle_marker_3f3c0e5a475c08235c196f2fadfdbf64 = L.circleMarker(
+                [41.5754767, 120.4390738],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec9f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_83e64ee1adc3cb31b13753e483c16927 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c11f549572b7b324db07e92f885eed8a = $(`<div id="html_c11f549572b7b324db07e92f885eed8a" style="width: 100.0%; height: 100.0%;">         <b>Chaoyang Kamei Quartz Co.</b><br>         <b>Location</b>: Chaoyang<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥120.0M     </div>`)[0];
+                popup_83e64ee1adc3cb31b13753e483c16927.setContent(html_c11f549572b7b324db07e92f885eed8a);
+            
+        
+
+        circle_marker_3f3c0e5a475c08235c196f2fadfdbf64.bindPopup(popup_83e64ee1adc3cb31b13753e483c16927)
+        ;
+
+        
+    
+    
+            var circle_marker_d516ddd208fe567438967692df7ed58b = L.circleMarker(
+                [39.7629676, 118.6588085],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_6b19edd91d68da51237d5a9694555dda = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd724795dbdaec5bd10c000794e4fcc8 = $(`<div id="html_dd724795dbdaec5bd10c000794e4fcc8" style="width: 100.0%; height: 100.0%;">         <b>Luanxian Xingye Stone Co.</b><br>         <b>Location</b>: Luanxian<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_6b19edd91d68da51237d5a9694555dda.setContent(html_dd724795dbdaec5bd10c000794e4fcc8);
+            
+        
+
+        circle_marker_d516ddd208fe567438967692df7ed58b.bindPopup(popup_6b19edd91d68da51237d5a9694555dda)
+        ;
+
+        
+    
+    
+            var circle_marker_1dd5ba8138f9332ecfd3facbd1192d21 = L.circleMarker(
+                [33.8490794, 115.7730968],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee79b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_17da8cd1faee80bd7ca5048c06bb3d5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b5e8037d8faedd4a342c1267e5afd98 = $(`<div id="html_7b5e8037d8faedd4a342c1267e5afd98" style="width: 100.0%; height: 100.0%;">         <b>Anhui Yixin New Material Co.</b><br>         <b>Location</b>: Bozhou<br>         <b>Capacity</b>: 60.0 kMT/yr<br>         <b>Investment</b>: ¥500.0M     </div>`)[0];
+                popup_17da8cd1faee80bd7ca5048c06bb3d5e.setContent(html_7b5e8037d8faedd4a342c1267e5afd98);
+            
+        
+
+        circle_marker_1dd5ba8138f9332ecfd3facbd1192d21.bindPopup(popup_17da8cd1faee80bd7ca5048c06bb3d5e)
+        ;
+
+        
+    
+    
+            var circle_marker_c6c5793a5a4090e188fdad9bc1491111 = L.circleMarker(
+                [36.5156772, 118.5384882],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee69b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_6ac5d40e82de1643c00368a2ff7d65f5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bae661c1d5ee57009473462427fb29d4 = $(`<div id="html_bae661c1d5ee57009473462427fb29d4" style="width: 100.0%; height: 100.0%;">         <b>Shandong Leo New Energy Co.</b><br>         <b>Location</b>: Linqu County, Weifang<br>         <b>Capacity</b>: 13.0 kMT/yr<br>         <b>Investment</b>: ¥510.0M     </div>`)[0];
+                popup_6ac5d40e82de1643c00368a2ff7d65f5.setContent(html_bae661c1d5ee57009473462427fb29d4);
+            
+        
+
+        circle_marker_c6c5793a5a4090e188fdad9bc1491111.bindPopup(popup_6ac5d40e82de1643c00368a2ff7d65f5)
+        ;
+
+        
+    
+    
+            var circle_marker_bdb41acda82479f11580f8f18403b7fc = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_e76ed2b91a7c5e434240ac817828790e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e95d4d229ceabfaae19909c8d7f7bc6 = $(`<div id="html_6e95d4d229ceabfaae19909c8d7f7bc6" style="width: 100.0%; height: 100.0%;">         <b>Lianyungang Chaozhiwei New Materials Technology Co., Ltd.</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_e76ed2b91a7c5e434240ac817828790e.setContent(html_6e95d4d229ceabfaae19909c8d7f7bc6);
+            
+        
+
+        circle_marker_bdb41acda82479f11580f8f18403b7fc.bindPopup(popup_e76ed2b91a7c5e434240ac817828790e)
+        ;
+
+        
+    
+    
+            var circle_marker_3de4b1980ed295d820e72b98fba9bd38 = L.circleMarker(
+                [28.973887, 118.8540924],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_788d80c58bd7992eafcd82a655ee9636);
+        
+    
+        var popup_11ad095e18b7ef2b3ac681b6f21d1c93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c14b3871da95cf805bfb2fe0542c3ab3 = $(`<div id="html_c14b3871da95cf805bfb2fe0542c3ab3" style="width: 100.0%; height: 100.0%;">         <b>Zhejiang Yonghe Semiconductor Material Co.</b><br>         <b>Location</b>: Quzhou<br>         <b>Capacity</b>: 0.05 kMT/yr<br>         <b>Investment</b>: ¥110.0M     </div>`)[0];
+                popup_11ad095e18b7ef2b3ac681b6f21d1c93.setContent(html_c14b3871da95cf805bfb2fe0542c3ab3);
+            
+        
+
+        circle_marker_3de4b1980ed295d820e72b98fba9bd38.bindPopup(popup_11ad095e18b7ef2b3ac681b6f21d1c93)
+        ;
+
+        
+    
+    
+            marker_cluster_788d80c58bd7992eafcd82a655ee9636.addTo(map_c7a8da0d13f66d2ee28495828817a7f7);
+        
+    
+    var color_map_cacd273f36bcda7a3a0e02ddfd2f3df1 = {};
+
+    
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.color = d3.scale.threshold()
+              .domain([70.0, 92.312625250501, 114.625250501002, 136.937875751503, 159.250501002004, 181.56312625250501, 203.875751503006, 226.18837675350701, 248.50100200400803, 270.813627254509, 293.12625250501003, 315.43887775551104, 337.751503006012, 360.064128256513, 382.37675350701403, 404.68937875751504, 427.00200400801606, 449.314629258517, 471.62725450901803, 493.93987975951904, 516.2525050100201, 538.5651302605211, 560.8777555110221, 583.1903807615231, 605.503006012024, 627.815631262525, 650.128256513026, 672.440881763527, 694.7535070140281, 717.0661322645291, 739.3787575150301, 761.6913827655311, 784.0040080160321, 806.316633266533, 828.629258517034, 850.941883767535, 873.2545090180361, 895.5671342685371, 917.8797595190381, 940.1923847695391, 962.5050100200401, 984.8176352705411, 1007.130260521042, 1029.442885771543, 1051.7555110220442, 1074.068136272545, 1096.3807615230462, 1118.693386773547, 1141.006012024048, 1163.318637274549, 1185.63126252505, 1207.943887775551, 1230.256513026052, 1252.569138276553, 1274.881763527054, 1297.194388777555, 1319.5070140280561, 1341.8196392785571, 1364.1322645290581, 1386.4448897795592, 1408.7575150300602, 1431.0701402805612, 1453.3827655310622, 1475.6953907815632, 1498.0080160320642, 1520.320641282565, 1542.633266533066, 1564.945891783567, 1587.258517034068, 1609.571142284569, 1631.88376753507, 1654.196392785571, 1676.5090180360721, 1698.8216432865731, 1721.1342685370741, 1743.4468937875752, 1765.7595190380762, 1788.0721442885772, 1810.3847695390782, 1832.6973947895792, 1855.0100200400802, 1877.3226452905812, 1899.6352705410823, 1921.9478957915833, 1944.260521042084, 1966.573146292585, 1988.885771543086, 2011.198396793587, 2033.5110220440881, 2055.823647294589, 2078.13627254509, 2100.448897795591, 2122.7615230460924, 2145.074148296593, 2167.386773547094, 2189.699398797595, 2212.012024048096, 2234.3246492985973, 2256.637274549098, 2278.9498997995993, 2301.2625250501, 2323.5751503006013, 2345.887775551102, 2368.2004008016033, 2390.513026052104, 2412.8256513026054, 2435.138276553106, 2457.4509018036074, 2479.763527054108, 2502.0761523046094, 2524.38877755511, 2546.701402805611, 2569.0140280561122, 2591.326653306613, 2613.6392785571143, 2635.951903807615, 2658.2645290581163, 2680.577154308617, 2702.8897795591183, 2725.202404809619, 2747.5150300601204, 2769.827655310621, 2792.1402805611224, 2814.452905811623, 2836.7655310621244, 2859.078156312625, 2881.3907815631264, 2903.703406813627, 2926.0160320641285, 2948.3286573146293, 2970.64128256513, 2992.9539078156313, 3015.266533066132, 3037.5791583166333, 3059.891783567134, 3082.2044088176353, 3104.517034068136, 3126.8296593186374, 3149.142284569138, 3171.4549098196394, 3193.76753507014, 3216.0801603206414, 3238.392785571142, 3260.7054108216435, 3283.0180360721442, 3305.3306613226455, 3327.6432865731463, 3349.9559118236475, 3372.2685370741483, 3394.581162324649, 3416.8937875751503, 3439.206412825651, 3461.5190380761524, 3483.831663326653, 3506.1442885771544, 3528.456913827655, 3550.7695390781564, 3573.082164328657, 3595.3947895791584, 3617.7074148296592, 3640.0200400801605, 3662.3326653306613, 3684.6452905811625, 3706.9579158316633, 3729.2705410821645, 3751.5831663326653, 3773.8957915831666, 3796.2084168336673, 3818.521042084168, 3840.8336673346694, 3863.14629258517, 3885.4589178356714, 3907.771543086172, 3930.0841683366734, 3952.396793587174, 3974.7094188376755, 3997.0220440881762, 4019.3346693386775, 4041.6472945891783, 4063.9599198396795, 4086.2725450901803, 4108.5851703406815, 4130.897795591182, 4153.210420841684, 4175.523046092185, 4197.835671342686, 4220.148296593186, 4242.460921843687, 4264.773547094188, 4287.08617234469, 4309.39879759519, 4331.711422845691, 4354.024048096192, 4376.336673346694, 4398.6492985971945, 4420.961923847695, 4443.274549098196, 4465.587174348698, 4487.899799599199, 4510.212424849699, 4532.5250501002, 4554.837675350702, 4577.150300601203, 4599.462925851703, 4621.775551102204, 4644.088176352705, 4666.400801603207, 4688.7134268537075, 4711.026052104208, 4733.338677354709, 4755.651302605211, 4777.9639278557115, 4800.276553106212, 4822.589178356713, 4844.901803607215, 4867.214428857716, 4889.527054108216, 4911.839679358717, 4934.152304609219, 4956.46492985972, 4978.77755511022, 5001.090180360721, 5023.402805611222, 5045.715430861724, 5068.0280561122245, 5090.340681362725, 5112.653306613226, 5134.965931863728, 5157.2785571142285, 5179.591182364729, 5201.90380761523, 5224.216432865732, 5246.529058116233, 5268.841683366733, 5291.154308617234, 5313.466933867736, 5335.779559118237, 5358.092184368737, 5380.404809619238, 5402.71743486974, 5425.030060120241, 5447.3426853707415, 5469.655310621242, 5491.967935871743, 5514.280561122245, 5536.593186372746, 5558.905811623246, 5581.218436873747, 5603.531062124249, 5625.84368737475, 5648.15631262525, 5670.468937875751, 5692.781563126253, 5715.094188376754, 5737.406813627254, 5759.719438877755, 5782.032064128257, 5804.344689378758, 5826.6573146292585, 5848.969939879759, 5871.28256513026, 5893.595190380762, 5915.907815631263, 5938.220440881763, 5960.533066132264, 5982.845691382766, 6005.158316633267, 6027.470941883767, 6049.783567134268, 6072.09619238477, 6094.408817635271, 6116.7214428857715, 6139.034068136272, 6161.346693386774, 6183.659318637275, 6205.9719438877755, 6228.284569138276, 6250.597194388778, 6272.909819639279, 6295.22244488978, 6317.53507014028, 6339.847695390781, 6362.160320641283, 6384.472945891784, 6406.785571142284, 6429.098196392785, 6451.410821643287, 6473.723446893788, 6496.0360721442885, 6518.348697394789, 6540.661322645291, 6562.973947895792, 6585.2865731462925, 6607.599198396793, 6629.911823647295, 6652.224448897796, 6674.537074148297, 6696.849699398797, 6719.162324649298, 6741.4749498998, 6763.787575150301, 6786.100200400801, 6808.412825651302, 6830.725450901804, 6853.038076152305, 6875.3507014028055, 6897.663326653306, 6919.975951903808, 6942.288577154309, 6964.60120240481, 6986.91382765531, 7009.226452905812, 7031.539078156313, 7053.851703406814, 7076.164328657314, 7098.476953907815, 7120.789579158317, 7143.102204408818, 7165.4148296593185, 7187.727454909819, 7210.040080160321, 7232.352705410822, 7254.6653306613225, 7276.977955911823, 7299.290581162325, 7321.603206412826, 7343.915831663327, 7366.228456913827, 7388.541082164329, 7410.85370741483, 7433.166332665331, 7455.478957915831, 7477.791583166333, 7500.104208416834, 7522.416833667335, 7544.7294589178355, 7567.042084168336, 7589.354709418838, 7611.667334669339, 7633.9799599198395, 7656.29258517034, 7678.605210420842, 7700.917835671343, 7723.230460921844, 7745.543086172344, 7767.855711422846, 7790.168336673347, 7812.480961923848, 7834.793587174348, 7857.10621242485, 7879.418837675351, 7901.731462925852, 7924.0440881763525, 7946.356713426853, 7968.669338677355, 7990.981963927856, 8013.294589178357, 8035.607214428857, 8057.919839679359, 8080.23246492986, 8102.545090180361, 8124.857715430861, 8147.170340681363, 8169.482965931864, 8191.795591182365, 8214.108216432865, 8236.420841683368, 8258.733466933867, 8281.04609218437, 8303.35871743487, 8325.671342685371, 8347.983967935872, 8370.296593186373, 8392.609218436874, 8414.921843687374, 8437.234468937875, 8459.547094188376, 8481.859719438879, 8504.17234468938, 8526.48496993988, 8548.79759519038, 8571.110220440882, 8593.422845691382, 8615.735470941883, 8638.048096192384, 8660.360721442887, 8682.673346693387, 8704.985971943888, 8727.298597194389, 8749.61122244489, 8771.92384769539, 8794.236472945891, 8816.549098196392, 8838.861723446893, 8861.174348697396, 8883.486973947896, 8905.799599198397, 8928.112224448898, 8950.424849699399, 8972.7374749499, 8995.0501002004, 9017.362725450901, 9039.675350701404, 9061.987975951904, 9084.300601202405, 9106.613226452906, 9128.925851703407, 9151.238476953908, 9173.551102204408, 9195.86372745491, 9218.17635270541, 9240.488977955913, 9262.801603206413, 9285.114228456914, 9307.426853707415, 9329.739478957916, 9352.052104208416, 9374.364729458917, 9396.677354709418, 9418.98997995992, 9441.302605210421, 9463.615230460922, 9485.927855711423, 9508.240480961924, 9530.553106212425, 9552.865731462925, 9575.178356713426, 9597.490981963927, 9619.80360721443, 9642.11623246493, 9664.428857715431, 9686.741482965932, 9709.054108216433, 9731.366733466934, 9753.679358717434, 9775.991983967935, 9798.304609218438, 9820.617234468938, 9842.92985971944, 9865.24248496994, 9887.55511022044, 9909.867735470942, 9932.180360721442, 9954.492985971943, 9976.805611222444, 9999.118236472947, 10021.430861723447, 10043.743486973948, 10066.056112224449, 10088.36873747495, 10110.68136272545, 10132.993987975951, 10155.306613226452, 10177.619238476955, 10199.931863727455, 10222.244488977956, 10244.557114228457, 10266.869739478958, 10289.182364729459, 10311.49498997996, 10333.80761523046, 10356.120240480963, 10378.432865731464, 10400.745490981964, 10423.058116232465, 10445.370741482966, 10467.683366733467, 10489.995991983968, 10512.308617234468, 10534.62124248497, 10556.933867735472, 10579.246492985973, 10601.559118236473, 10623.871743486974, 10646.184368737475, 10668.496993987976, 10690.809619238476, 10713.122244488977, 10735.43486973948, 10757.74749498998, 10780.060120240481, 10802.372745490982, 10824.685370741483, 10846.997995991984, 10869.310621242485, 10891.623246492985, 10913.935871743486, 10936.248496993989, 10958.56112224449, 10980.87374749499, 11003.186372745491, 11025.498997995992, 11047.811623246493, 11070.124248496993, 11092.436873747494, 11114.749498997997, 11137.062124248498, 11159.374749498998, 11181.6873747495, 11204.0])
+              .range(['#ffeda0ff', '#ffeda0ff', '#ffeda0ff', '#ffec9fff', '#ffec9fff', '#ffec9fff', '#ffeb9fff', '#ffeb9eff', '#ffeb9eff', '#ffea9eff', '#ffea9eff', '#ffe99dff', '#ffe99dff', '#ffe99dff', '#ffe89dff', '#ffe89cff', '#ffe89cff', '#ffe79cff', '#ffe79bff', '#ffe79bff', '#ffe69bff', '#ffe69bff', '#ffe69aff', '#ffe59aff', '#ffe59aff', '#ffe49aff', '#ffe499ff', '#ffe499ff', '#ffe399ff', '#ffe399ff', '#ffe398ff', '#ffe298ff', '#ffe298ff', '#ffe298ff', '#fee197ff', '#fee197ff', '#fee197ff', '#fee097ff', '#fee096ff', '#fedf96ff', '#fedf96ff', '#fedf96ff', '#fede95ff', '#fede95ff', '#fede95ff', '#fedd95ff', '#fedd94ff', '#fedd94ff', '#fedc94ff', '#fedc94ff', '#fedc93ff', '#fedb93ff', '#fedb93ff', '#feda92ff', '#feda92ff', '#feda92ff', '#fed992ff', '#fed991ff', '#fed991ff', '#fed891ff', '#fed891ff', '#fed890ff', '#fed790ff', '#fed790ff', '#fed790ff', '#fed68fff', '#fed68fff', '#fdd58fff', '#fdd58fff', '#fdd58eff', '#fdd48eff', '#fdd48eff', '#fdd48eff', '#fdd38dff', '#fdd38dff', '#fdd38dff', '#fdd28dff', '#fdd28cff', '#fdd18cff', '#fdd18cff', '#fdd18cff', '#fdd08bff', '#fdd08bff', '#fdd08bff', '#fdcf8aff', '#fdcf8aff', '#fdcf8aff', '#fdce8aff', '#fdce89ff', '#fdce89ff', '#fdcd89ff', '#fdcd89ff', '#fdcc88ff', '#fdcc88ff', '#fdcc88ff', '#fdcb88ff', '#fdcb87ff', '#fdcb87ff', '#fdca87ff', '#fdca87ff', '#fcca86ff', '#fcc986ff', '#fcc986ff', '#fcc986ff', '#fcc885ff', '#fcc885ff', '#fcc785ff', '#fcc785ff', '#fcc784ff', '#fcc684ff', '#fcc684ff', '#fcc684ff', '#fcc583ff', '#fcc583ff', '#fcc583ff', '#fcc483ff', '#fcc482ff', '#fcc482ff', '#fcc382ff', '#fcc381ff', '#fcc281ff', '#fcc281ff', '#fcc281ff', '#fcc180ff', '#fcc180ff', '#fcc180ff', '#fcc080ff', '#fcc07fff', '#fcc07fff', '#fcbf7fff', '#fcbf7fff', '#fcbf7eff', '#fcbe7eff', '#fbbe7eff', '#fbbd7eff', '#fbbd7dff', '#fbbd7dff', '#fbbc7dff', '#fbbc7dff', '#fbbc7cff', '#fbbb7cff', '#fbbb7cff', '#fbbb7cff', '#fbba7bff', '#fbba7bff', '#fbba7bff', '#fbb97bff', '#fbb97aff', '#fbb87aff', '#fbb87aff', '#fbb879ff', '#fbb779ff', '#fbb779ff', '#fbb779ff', '#fbb678ff', '#fbb678ff', '#fbb678ff', '#fbb578ff', '#fbb577ff', '#fbb477ff', '#fbb477ff', '#fbb477ff', '#fbb376ff', '#fbb376ff', '#fbb376ff', '#fbb276ff', '#fab275ff', '#fab275ff', '#fab175ff', '#fab175ff', '#fab174ff', '#fab074ff', '#fab074ff', '#faaf74ff', '#faaf73ff', '#faaf73ff', '#faae73ff', '#faae73ff', '#faae72ff', '#faad72ff', '#faad72ff', '#faad72ff', '#faac71ff', '#faac71ff', '#faac71ff', '#faab70ff', '#faab70ff', '#faaa70ff', '#faaa70ff', '#faaa6fff', '#faa96fff', '#faa96fff', '#faa96fff', '#faa86eff', '#faa86eff', '#faa86eff', '#faa76eff', '#faa76dff', '#faa76dff', '#f9a66dff', '#f9a66dff', '#f9a56cff', '#f9a56cff', '#f9a56cff', '#f9a46cff', '#f9a46bff', '#f9a46bff', '#f9a36bff', '#f9a36bff', '#f9a36aff', '#f9a26aff', '#f9a26aff', '#f9a26aff', '#f9a169ff', '#f9a169ff', '#f9a069ff', '#f9a069ff', '#f9a068ff', '#f99f68ff', '#f99f68ff', '#f99f67ff', '#f99e67ff', '#f99e67ff', '#f99e67ff', '#f99d66ff', '#f99d66ff', '#f99c66ff', '#f99c66ff', '#f99c65ff', '#f99b65ff', '#f99b65ff', '#f99b65ff', '#f89a64ff', '#f89a64ff', '#f89a64ff', '#f89964ff', '#f89963ff', '#f89963ff', '#f89863ff', '#f89863ff', '#f89762ff', '#f89762ff', '#f89762ff', '#f89662ff', '#f89661ff', '#f89661ff', '#f89561ff', '#f89561ff', '#f89560ff', '#f89460ff', '#f89460ff', '#f8945fff', '#f8935fff', '#f8935fff', '#f8925fff', '#f8925eff', '#f8925eff', '#f8915eff', '#f8915eff', '#f8915dff', '#f8905dff', '#f8905dff', '#f8905dff', '#f88f5cff', '#f88f5cff', '#f88f5cff', '#f78e5cff', '#f78e5bff', '#f78d5bff', '#f78d5bff', '#f78d5bff', '#f78c5aff', '#f78c5aff', '#f78c5aff', '#f78b5aff', '#f78b59ff', '#f78b59ff', '#f78a59ff', '#f78a59ff', '#f78a58ff', '#f78958ff', '#f78958ff', '#f78858ff', '#f78857ff', '#f78857ff', '#f78757ff', '#f78756ff', '#f78756ff', '#f78656ff', '#f78656ff', '#f78655ff', '#f78555ff', '#f78555ff', '#f78555ff', '#f78454ff', '#f78454ff', '#f78354ff', '#f78354ff', '#f78353ff', '#f68253ff', '#f68253ff', '#f68253ff', '#f68152ff', '#f68152ff', '#f68152ff', '#f68052ff', '#f68051ff', '#f67f51ff', '#f67f51ff', '#f67f51ff', '#f67e50ff', '#f67e50ff', '#f67e50ff', '#f67d50ff', '#f67d4fff', '#f67d4fff', '#f67c4fff', '#f67c4eff', '#f67c4eff', '#f67b4eff', '#f67b4eff', '#f67a4dff', '#f67a4dff', '#f67a4dff', '#f6794dff', '#f6794cff', '#f6794cff', '#f6784cff', '#f6784cff', '#f6784bff', '#f6774bff', '#f6774bff', '#f5774bff', '#f5764aff', '#f5764aff', '#f5754aff', '#f5754aff', '#f57549ff', '#f57449ff', '#f57449ff', '#f57449ff', '#f57348ff', '#f57348ff', '#f57348ff', '#f57248ff', '#f57247ff', '#f57247ff', '#f57147ff', '#f57147ff', '#f57046ff', '#f57046ff', '#f57046ff', '#f56f45ff', '#f56f45ff', '#f56f45ff', '#f56e45ff', '#f56e44ff', '#f56e44ff', '#f56d44ff', '#f56d44ff', '#f56d43ff', '#f56c43ff', '#f56c43ff', '#f56b43ff', '#f56b42ff', '#f46b42ff', '#f46a42ff', '#f46a42ff', '#f46a41ff', '#f46941ff', '#f46941ff', '#f46941ff', '#f46840ff', '#f46840ff', '#f46740ff', '#f46740ff', '#f4673fff', '#f4663fff', '#f4663fff', '#f4663fff', '#f4653eff', '#f4653eff', '#f4653eff', '#f4643dff', '#f4643dff', '#f4643dff', '#f4633dff', '#f4633cff', '#f4623cff', '#f4623cff', '#f4623cff', '#f4613bff', '#f4613bff', '#f4613bff', '#f4603bff', '#f4603aff', '#f4603aff', '#f45f3aff', '#f35f3aff', '#f35f39ff', '#f35e39ff', '#f35e39ff', '#f35d39ff', '#f35d38ff', '#f35d38ff', '#f35c38ff', '#f35c38ff', '#f35c37ff', '#f35b37ff', '#f35b37ff', '#f35b37ff', '#f35a36ff', '#f35a36ff', '#f35a36ff', '#f35936ff', '#f35935ff', '#f35835ff', '#f35835ff', '#f35834ff', '#f35734ff', '#f35734ff', '#f35734ff', '#f35633ff', '#f35633ff', '#f35633ff', '#f35533ff', '#f35532ff', '#f35532ff', '#f35432ff', '#f35432ff', '#f35331ff', '#f25331ff', '#f25331ff', '#f25231ff', '#f25230ff', '#f25230ff', '#f25130ff', '#f25130ff', '#f2512fff', '#f2502fff', '#f2502fff', '#f2502fff', '#f24f2eff', '#f24f2eff', '#f24e2eff', '#f24e2eff', '#f24e2dff', '#f24d2dff', '#f24d2dff', '#f24d2dff', '#f24c2cff', '#f24c2cff', '#f24c2cff', '#f24b2bff', '#f24b2bff', '#f24a2bff', '#f24a2bff', '#f24a2aff', '#f2492aff', '#f2492aff', '#f2492aff', '#f24829ff', '#f24829ff', '#f24829ff', '#f14729ff', '#f14728ff', '#f14728ff', '#f14628ff', '#f14628ff', '#f14527ff', '#f14527ff', '#f14527ff', '#f14427ff', '#f14426ff', '#f14426ff', '#f14326ff', '#f14326ff', '#f14325ff', '#f14225ff', '#f14225ff', '#f14225ff', '#f14124ff', '#f14124ff', '#f14024ff', '#f14023ff', '#f14023ff', '#f13f23ff', '#f13f23ff', '#f13f22ff', '#f13e22ff', '#f13e22ff', '#f13e22ff', '#f13d21ff', '#f13d21ff', '#f13d21ff', '#f13c21ff', '#f13c20ff', '#f13b20ff', '#f03b20ff', '#f03b20ff']);
+    
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x = d3.scale.linear()
+              .domain([70.0, 11204.0])
+              .range([0, 450 - 50]);
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.legend = L.control({position: 'topright'});
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.legend.addTo(map_c7a8da0d13f66d2ee28495828817a7f7);
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.xAxis = d3.svg.axis()
+        .scale(color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([70.0, 11204.0]);
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.g = color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.g.selectAll("rect")
+        .data(color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x(color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.color.domain()[i - 1]) : color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x.range()[0],
+            x1: i < color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.color.domain().length ? color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x(color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.color.domain()[i]) : color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.g.call(color_map_cacd273f36bcda7a3a0e02ddfd2f3df1.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("invested money (\u00a5M)");
+    
+            tile_layer_d5503ef0c24d4af55492fadb22de5f71.addTo(map_c7a8da0d13f66d2ee28495828817a7f7);
+        
+    
+            marker_cluster_788d80c58bd7992eafcd82a655ee9636.addTo(map_c7a8da0d13f66d2ee28495828817a7f7);
+        
+</script>
+</html>
