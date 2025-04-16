@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_61b27a4ca8249dea7c2515adbb5853c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_61b27a4ca8249dea7c2515adbb5853c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_61b27a4ca8249dea7c2515adbb5853c9 = L.map(
+                "map_61b27a4ca8249dea7c2515adbb5853c9",
+                {
+                    center: [35.0, 105.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29e66e94a9ea2a3e97c3726eadc9292d = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_29e66e94a9ea2a3e97c3726eadc9292d.addTo(map_61b27a4ca8249dea7c2515adbb5853c9);
+        
+    
+            var marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_d6b5438821869661e9cbcab6f350f2eb = L.circleMarker(
+                [30.8101669, 108.4034084],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_82453ae30f4287c57209523f355417c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0eb57bb3f0ef44c06896a52123bb5cc2 = $(`<div id="html_0eb57bb3f0ef44c06896a52123bb5cc2" style="width: 100.0%; height: 100.0%;">         <b>Chongqing Xianghong Linfeng New Material Co.</b><br>         <b>Location</b>: Chongqing<br>         <b>Capacity</b>: 100.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_82453ae30f4287c57209523f355417c7.setContent(html_0eb57bb3f0ef44c06896a52123bb5cc2);
+            
+        
+
+        circle_marker_d6b5438821869661e9cbcab6f350f2eb.bindPopup(popup_82453ae30f4287c57209523f355417c7)
+        ;
+
+        
+    
+    
+            var circle_marker_dd9864dfe1467fd912bcc4ae43065b00 = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_fe7f2e0722f5ebd10545d01a4b9334aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd3a54ed55fed23e670c47f4cd2e3575 = $(`<div id="html_fd3a54ed55fed23e670c47f4cd2e3575" style="width: 100.0%; height: 100.0%;">         <b>Hongwei high-purity quartz materials</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥70.0M     </div>`)[0];
+                popup_fe7f2e0722f5ebd10545d01a4b9334aa.setContent(html_fd3a54ed55fed23e670c47f4cd2e3575);
+            
+        
+
+        circle_marker_dd9864dfe1467fd912bcc4ae43065b00.bindPopup(popup_fe7f2e0722f5ebd10545d01a4b9334aa)
+        ;
+
+        
+    
+    
+            var circle_marker_715d0b49a1223b1b261c9264fa344800 = L.circleMarker(
+                [34.7533392, 113.6599983],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f03b20", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_c95efb9ada41079192e55cf0d0c79e3b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ba3bd60ede176833cff946c36156b44 = $(`<div id="html_0ba3bd60ede176833cff946c36156b44" style="width: 100.0%; height: 100.0%;">         <b>Henan Provincial Science and Technology Investment Co.</b><br>         <b>Location</b>: Zhengzhou<br>         <b>Capacity</b>: 300.0 kMT/yr<br>         <b>Investment</b>: ¥11204.0M     </div>`)[0];
+                popup_c95efb9ada41079192e55cf0d0c79e3b.setContent(html_0ba3bd60ede176833cff946c36156b44);
+            
+        
+
+        circle_marker_715d0b49a1223b1b261c9264fa344800.bindPopup(popup_c95efb9ada41079192e55cf0d0c79e3b)
+        ;
+
+        
+    
+    
+            var circle_marker_bd5d88b9dbea420aa5a34f4bd4e527bd = L.circleMarker(
+                [39.4602947, 108.8134284],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_55a3ea9762284f404db879bd8e992f19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9301fe7f75892195b9d0cbe75e1420e0 = $(`<div id="html_9301fe7f75892195b9d0cbe75e1420e0" style="width: 100.0%; height: 100.0%;">         <b>Huasi (Inner Mongolia) New Material Technology Co.</b><br>         <b>Location</b>: Ordos<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_55a3ea9762284f404db879bd8e992f19.setContent(html_9301fe7f75892195b9d0cbe75e1420e0);
+            
+        
+
+        circle_marker_bd5d88b9dbea420aa5a34f4bd4e527bd.bindPopup(popup_55a3ea9762284f404db879bd8e992f19)
+        ;
+
+        
+    
+    
+            var circle_marker_703ee4e44e83349baf1fe79e3cdac489 = L.circleMarker(
+                [31.9215518, 120.2808847],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee69b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_77bb6120fb13342c8fec1f633173b928 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6ff42741aeffbcf8f1a5f159ec3f05df = $(`<div id="html_6ff42741aeffbcf8f1a5f159ec3f05df" style="width: 100.0%; height: 100.0%;">         <b>New Shengjin Semiconductor New Material Project</b><br>         <b>Location</b>: Jiangyin<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥500.0M     </div>`)[0];
+                popup_77bb6120fb13342c8fec1f633173b928.setContent(html_6ff42741aeffbcf8f1a5f159ec3f05df);
+            
+        
+
+        circle_marker_703ee4e44e83349baf1fe79e3cdac489.bindPopup(popup_77bb6120fb13342c8fec1f633173b928)
+        ;
+
+        
+    
+    
+            var circle_marker_aacedb7560f02cceb4de6c8ac140bd3b = L.circleMarker(
+                [30.4049826, 112.8940372],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_90caf4da0de78b7bcf8a76250e2564b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_660090df7fd58a9e93fa10503f55ce53 = $(`<div id="html_660090df7fd58a9e93fa10503f55ce53" style="width: 100.0%; height: 100.0%;">         <b>Qianjiang Zhutong New Material Technology Co.</b><br>         <b>Location</b>: Qianjiang<br>         <b>Capacity</b>: 3.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_90caf4da0de78b7bcf8a76250e2564b0.setContent(html_660090df7fd58a9e93fa10503f55ce53);
+            
+        
+
+        circle_marker_aacedb7560f02cceb4de6c8ac140bd3b.bindPopup(popup_90caf4da0de78b7bcf8a76250e2564b0)
+        ;
+
+        
+    
+    
+            var circle_marker_e8901c23ab252e6cda3c62855498403f = L.circleMarker(
+                [33.5826865, 114.0107357],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee399", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_d159b02d3211fd0ccef8cc0cbbea246f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a967bf1c6966db5a1d8f9d9c9987f31 = $(`<div id="html_3a967bf1c6966db5a1d8f9d9c9987f31" style="width: 100.0%; height: 100.0%;">         <b>Henan GCL Silica-based New Material Company</b><br>         <b>Location</b>: Luohe<br>         <b>Capacity</b>: 30.0 kMT/yr<br>         <b>Investment</b>: ¥700.0M     </div>`)[0];
+                popup_d159b02d3211fd0ccef8cc0cbbea246f.setContent(html_3a967bf1c6966db5a1d8f9d9c9987f31);
+            
+        
+
+        circle_marker_e8901c23ab252e6cda3c62855498403f.bindPopup(popup_d159b02d3211fd0ccef8cc0cbbea246f)
+        ;
+
+        
+    
+    
+            var circle_marker_13bbfd38441160a95971f62b6cad474c = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee59a", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_586a53f1117fe9e3e95426ab641a2a3f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d3e0f160fc4313abd8900766adde3e7d = $(`<div id="html_d3e0f160fc4313abd8900766adde3e7d" style="width: 100.0%; height: 100.0%;">         <b>Pacific Quartz</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥600.0M     </div>`)[0];
+                popup_586a53f1117fe9e3e95426ab641a2a3f.setContent(html_d3e0f160fc4313abd8900766adde3e7d);
+            
+        
+
+        circle_marker_13bbfd38441160a95971f62b6cad474c.bindPopup(popup_586a53f1117fe9e3e95426ab641a2a3f)
+        ;
+
+        
+    
+    
+            var circle_marker_0087bb17f51b96a66b74883b3ded7732 = L.circleMarker(
+                [39.4857837, 106.900469],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdd58f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_dc0953ec8e7ee284b3e40d753f160199 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_343d6b389b9ef7aa7f8b076e24dea7a6 = $(`<div id="html_343d6b389b9ef7aa7f8b076e24dea7a6" style="width: 100.0%; height: 100.0%;">         <b>Inner Mongolia Wanxing Silicon-based Advanced Materials</b><br>         <b>Location</b>: Wuhai<br>         <b>Capacity</b>: 870.0 kMT/yr<br>         <b>Investment</b>: ¥1540.0M     </div>`)[0];
+                popup_dc0953ec8e7ee284b3e40d753f160199.setContent(html_343d6b389b9ef7aa7f8b076e24dea7a6);
+            
+        
+
+        circle_marker_0087bb17f51b96a66b74883b3ded7732.bindPopup(popup_dc0953ec8e7ee284b3e40d753f160199)
+        ;
+
+        
+    
+    
+            var circle_marker_59150f3ce66ec97719278a4051a38981 = L.circleMarker(
+                [41.5754767, 120.4390738],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec9f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_7108ad1c18a23726e10f88d3fd7588d5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_654109a9782a2cfc92a25f3225cb3f79 = $(`<div id="html_654109a9782a2cfc92a25f3225cb3f79" style="width: 100.0%; height: 100.0%;">         <b>Chaoyang Kamei Quartz Co.</b><br>         <b>Location</b>: Chaoyang<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥120.0M     </div>`)[0];
+                popup_7108ad1c18a23726e10f88d3fd7588d5.setContent(html_654109a9782a2cfc92a25f3225cb3f79);
+            
+        
+
+        circle_marker_59150f3ce66ec97719278a4051a38981.bindPopup(popup_7108ad1c18a23726e10f88d3fd7588d5)
+        ;
+
+        
+    
+    
+            var circle_marker_481554435c45bac18a3d83703b2ae08b = L.circleMarker(
+                [39.7629676, 118.6588085],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_92e0e7f601518042c3cbf3dd0972a9fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c739dcd6445985f04140faa84c5b529 = $(`<div id="html_4c739dcd6445985f04140faa84c5b529" style="width: 100.0%; height: 100.0%;">         <b>Luanxian Xingye Stone Co.</b><br>         <b>Location</b>: Luanxian<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_92e0e7f601518042c3cbf3dd0972a9fc.setContent(html_4c739dcd6445985f04140faa84c5b529);
+            
+        
+
+        circle_marker_481554435c45bac18a3d83703b2ae08b.bindPopup(popup_92e0e7f601518042c3cbf3dd0972a9fc)
+        ;
+
+        
+    
+    
+            var circle_marker_2eec21808b2a69166e988e89079816d2 = L.circleMarker(
+                [33.8490794, 115.7730968],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee69b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_0995723119ed97a54a95586952413392 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_864de8c9373326279c076473f25f7916 = $(`<div id="html_864de8c9373326279c076473f25f7916" style="width: 100.0%; height: 100.0%;">         <b>Anhui Yixin New Material Co.</b><br>         <b>Location</b>: Bozhou<br>         <b>Capacity</b>: 60.0 kMT/yr<br>         <b>Investment</b>: ¥500.0M     </div>`)[0];
+                popup_0995723119ed97a54a95586952413392.setContent(html_864de8c9373326279c076473f25f7916);
+            
+        
+
+        circle_marker_2eec21808b2a69166e988e89079816d2.bindPopup(popup_0995723119ed97a54a95586952413392)
+        ;
+
+        
+    
+    
+            var circle_marker_deae9b520eb6310515b1ac012869040b = L.circleMarker(
+                [36.5156772, 118.5384882],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fee69b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_8474ef5910cc6889104f4e544ad89deb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_56caac71f7b1b8d1aed95285e99cb621 = $(`<div id="html_56caac71f7b1b8d1aed95285e99cb621" style="width: 100.0%; height: 100.0%;">         <b>Shandong Leo New Energy Co.</b><br>         <b>Location</b>: Linqu County, Weifang<br>         <b>Capacity</b>: 13.0 kMT/yr<br>         <b>Investment</b>: ¥510.0M     </div>`)[0];
+                popup_8474ef5910cc6889104f4e544ad89deb.setContent(html_56caac71f7b1b8d1aed95285e99cb621);
+            
+        
+
+        circle_marker_deae9b520eb6310515b1ac012869040b.bindPopup(popup_8474ef5910cc6889104f4e544ad89deb)
+        ;
+
+        
+    
+    
+            var circle_marker_a4b0317a3d8a5c29472573d8d0dbd64c = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_7cf84ffbacc25b8b48f0ebafedf31eae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55c61176fb1c37856d187a2392bfe6ca = $(`<div id="html_55c61176fb1c37856d187a2392bfe6ca" style="width: 100.0%; height: 100.0%;">         <b>Lianyungang Chaozhiwei New Materials Technology Co., Ltd.</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_7cf84ffbacc25b8b48f0ebafedf31eae.setContent(html_55c61176fb1c37856d187a2392bfe6ca);
+            
+        
+
+        circle_marker_a4b0317a3d8a5c29472573d8d0dbd64c.bindPopup(popup_7cf84ffbacc25b8b48f0ebafedf31eae)
+        ;
+
+        
+    
+    
+            var circle_marker_e3e8b4af4c4a6728e8a3a77b3a8f265c = L.circleMarker(
+                [28.973887, 118.8540924],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec9f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_c311e2b606cb577d07b67889bb54d41f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_25721e813479f5bb1efd6f1103acdbdc = $(`<div id="html_25721e813479f5bb1efd6f1103acdbdc" style="width: 100.0%; height: 100.0%;">         <b>Zhejiang Yonghe Semiconductor Material Co.</b><br>         <b>Location</b>: Quzhou<br>         <b>Capacity</b>: 0.05 kMT/yr<br>         <b>Investment</b>: ¥110.0M     </div>`)[0];
+                popup_c311e2b606cb577d07b67889bb54d41f.setContent(html_25721e813479f5bb1efd6f1103acdbdc);
+            
+        
+
+        circle_marker_e3e8b4af4c4a6728e8a3a77b3a8f265c.bindPopup(popup_c311e2b606cb577d07b67889bb54d41f)
+        ;
+
+        
+    
+    
+            var circle_marker_819b64f4c47937e9417d9a8bd4dd5360 = L.circleMarker(
+                [24.2918414, 116.1171428],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec9f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_70f82870f2e5b4114679f64f45825303 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae4888c9bf350af98f649c2531746b48 = $(`<div id="html_ae4888c9bf350af98f649c2531746b48" style="width: 100.0%; height: 100.0%;">         <b>Meizhou Youxin Material Technology Co.</b><br>         <b>Location</b>: Meizhou<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥120.0M     </div>`)[0];
+                popup_70f82870f2e5b4114679f64f45825303.setContent(html_ae4888c9bf350af98f649c2531746b48);
+            
+        
+
+        circle_marker_819b64f4c47937e9417d9a8bd4dd5360.bindPopup(popup_70f82870f2e5b4114679f64f45825303)
+        ;
+
+        
+    
+    
+            var circle_marker_b1f54dd0972cc5e9d4e12269a4055d03 = L.circleMarker(
+                [34.5933134, 119.2171662],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_ffd824c0bb98f7fd95495d48cbd2c7df = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75d1ee21d3d015160056166f66d7ee27 = $(`<div id="html_75d1ee21d3d015160056166f66d7ee27" style="width: 100.0%; height: 100.0%;">         <b>Donghai Zhongyuan Quartz Products Co.</b><br>         <b>Location</b>: Lianyungang<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥55.0M     </div>`)[0];
+                popup_ffd824c0bb98f7fd95495d48cbd2c7df.setContent(html_75d1ee21d3d015160056166f66d7ee27);
+            
+        
+
+        circle_marker_b1f54dd0972cc5e9d4e12269a4055d03.bindPopup(popup_ffd824c0bb98f7fd95495d48cbd2c7df)
+        ;
+
+        
+    
+    
+            var circle_marker_e8b1828e98ff9e265cc6aed9493300e0 = L.circleMarker(
+                [29.060703, 113.348653],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_9ae62d9953ba61e483caea9bf523a6b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_944da4da43fbf379b12f86f8e202ba5f = $(`<div id="html_944da4da43fbf379b12f86f8e202ba5f" style="width: 100.0%; height: 100.0%;">         <b>Yueyang Jinkang New Material Co.</b><br>         <b>Location</b>: Yueyang<br>         <b>Capacity</b>: 100.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_9ae62d9953ba61e483caea9bf523a6b6.setContent(html_944da4da43fbf379b12f86f8e202ba5f);
+            
+        
+
+        circle_marker_e8b1828e98ff9e265cc6aed9493300e0.bindPopup(popup_9ae62d9953ba61e483caea9bf523a6b6)
+        ;
+
+        
+    
+    
+            var circle_marker_a3ef87dfc235f8507e68ab998441fa5f = L.circleMarker(
+                [43.2564906, 118.9759212],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9e", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_c7cbac6b3797c230717c1d63f7a93fd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22b263997153eb10d1fde432d1146077 = $(`<div id="html_22b263997153eb10d1fde432d1146077" style="width: 100.0%; height: 100.0%;">         <b>Huasi (Inner Mongolia) New Material Technology Co.</b><br>         <b>Location</b>: Chifeng<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥200.0M     </div>`)[0];
+                popup_c7cbac6b3797c230717c1d63f7a93fd9.setContent(html_22b263997153eb10d1fde432d1146077);
+            
+        
+
+        circle_marker_a3ef87dfc235f8507e68ab998441fa5f.bindPopup(popup_c7cbac6b3797c230717c1d63f7a93fd9)
+        ;
+
+        
+    
+    
+            var circle_marker_a5aed3ce2f9eaf34a9716633d69af99b = L.circleMarker(
+                [40.9902685, 113.1315646],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_7803768b415679b28876a1bdfdfa97da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e514f278c332d456c65249ae4053a4d1 = $(`<div id="html_e514f278c332d456c65249ae4053a4d1" style="width: 100.0%; height: 100.0%;">         <b>Inner Mongolia Qianhe New Material Technology Co.</b><br>         <b>Location</b>: Ulanqab<br>         <b>Capacity</b>: 60.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_7803768b415679b28876a1bdfdfa97da.setContent(html_e514f278c332d456c65249ae4053a4d1);
+            
+        
+
+        circle_marker_a5aed3ce2f9eaf34a9716633d69af99b.bindPopup(popup_7803768b415679b28876a1bdfdfa97da)
+        ;
+
+        
+    
+    
+            var circle_marker_f45c2c0ed7bc29a8dd39f06fc24c1e34 = L.circleMarker(
+                [33.2619055, 115.3540362],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_729e8629445a167eb1fc96e7ea62f401 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37bd17b193fdd71f099cba7432be1916 = $(`<div id="html_37bd17b193fdd71f099cba7432be1916" style="width: 100.0%; height: 100.0%;">         <b>ANHUI Dushi Group</b><br>         <b>Location</b>: Jieshou<br>         <b>Capacity</b>: 3000.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_729e8629445a167eb1fc96e7ea62f401.setContent(html_37bd17b193fdd71f099cba7432be1916);
+            
+        
+
+        circle_marker_f45c2c0ed7bc29a8dd39f06fc24c1e34.bindPopup(popup_729e8629445a167eb1fc96e7ea62f401)
+        ;
+
+        
+    
+    
+            var circle_marker_a87003ddc86c294e0507d31482016062 = L.circleMarker(
+                [27.6581325, 111.4534719],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_0f4fda7cdd5b93bb5b2e90c5bcac257c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c56d3b091d334cf8dfd01a7c48fd30b5 = $(`<div id="html_c56d3b091d334cf8dfd01a7c48fd30b5" style="width: 100.0%; height: 100.0%;">         <b>Lengshuijiang Jingyi New Material Technology Co</b><br>         <b>Location</b>: Lengshuijiang<br>         <b>Capacity</b>: 36.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_0f4fda7cdd5b93bb5b2e90c5bcac257c.setContent(html_c56d3b091d334cf8dfd01a7c48fd30b5);
+            
+        
+
+        circle_marker_a87003ddc86c294e0507d31482016062.bindPopup(popup_0f4fda7cdd5b93bb5b2e90c5bcac257c)
+        ;
+
+        
+    
+    
+            var circle_marker_8656c8a6e5e60a3df49087edb693e0cb = L.circleMarker(
+                [24.2918414, 116.1171428],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec9f", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_86abf51f9fbaf147350b49e6816c899b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_759298358d3ec3ed27576ec699de4bb8 = $(`<div id="html_759298358d3ec3ed27576ec699de4bb8" style="width: 100.0%; height: 100.0%;">         <b>Meizhou Youxin Material Technology Co.</b><br>         <b>Location</b>: Meizhou<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥120.0M     </div>`)[0];
+                popup_86abf51f9fbaf147350b49e6816c899b.setContent(html_759298358d3ec3ed27576ec699de4bb8);
+            
+        
+
+        circle_marker_8656c8a6e5e60a3df49087edb693e0cb.bindPopup(popup_86abf51f9fbaf147350b49e6816c899b)
+        ;
+
+        
+    
+    
+            var circle_marker_951b1dbfb3a79265a8f57d77fbd55894 = L.circleMarker(
+                [34.5431964, 118.7474407],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_71258e3915b650b82bb5c54ca323318b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b9a98a428e7a2d20d79ea3970c1acaaf = $(`<div id="html_b9a98a428e7a2d20d79ea3970c1acaaf" style="width: 100.0%; height: 100.0%;">         <b>Donghai Zhongyuan Quartz Products Co.</b><br>         <b>Location</b>: Donghai (Lianyungang)<br>         <b>Capacity</b>: 10.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_71258e3915b650b82bb5c54ca323318b.setContent(html_b9a98a428e7a2d20d79ea3970c1acaaf);
+            
+        
+
+        circle_marker_951b1dbfb3a79265a8f57d77fbd55894.bindPopup(popup_71258e3915b650b82bb5c54ca323318b)
+        ;
+
+        
+    
+    
+            var circle_marker_386513f208a6c8fe8c8f85a66fb7969b = L.circleMarker(
+                [31.805347444188403, 121.11227683892774],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_e9fd675b95a6c0640721a925f56d81fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6698211341ea37a1ad564e8f95943fb9 = $(`<div id="html_6698211341ea37a1ad564e8f95943fb9" style="width: 100.0%; height: 100.0%;">         <b>Yudi Technology Group</b><br>         <b>Location</b>: Xiamen<br>         <b>Capacity</b>: 17.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_e9fd675b95a6c0640721a925f56d81fd.setContent(html_6698211341ea37a1ad564e8f95943fb9);
+            
+        
+
+        circle_marker_386513f208a6c8fe8c8f85a66fb7969b.bindPopup(popup_e9fd675b95a6c0640721a925f56d81fd)
+        ;
+
+        
+    
+    
+            var circle_marker_f90c8368c0ba000af5512f95877ceb0b = L.circleMarker(
+                [41.4244866, 123.3335139],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeda0", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_11a6773c60c0e1872317cbc3d8ea999e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bda31d8d6e03f7318d6d56601f6d96ad = $(`<div id="html_bda31d8d6e03f7318d6d56601f6d96ad" style="width: 100.0%; height: 100.0%;">         <b>Dengta Shuangli Silica Mining Co.</b><br>         <b>Location</b>: Dengta (Liaoyang)<br>         <b>Capacity</b>: nan kMT/yr<br>         <b>Investment</b>: ¥75.0M     </div>`)[0];
+                popup_11a6773c60c0e1872317cbc3d8ea999e.setContent(html_bda31d8d6e03f7318d6d56601f6d96ad);
+            
+        
+
+        circle_marker_f90c8368c0ba000af5512f95877ceb0b.bindPopup(popup_11a6773c60c0e1872317cbc3d8ea999e)
+        ;
+
+        
+    
+    
+            var circle_marker_3b1ebff13c7218141e16f0412429e8bd = L.circleMarker(
+                [41.569576, 107.494851],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffea9d", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_d8736d7a5ad6c59228ce8c29ed537e93 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c8f627fbd04c0941a1809049aae5adf = $(`<div id="html_4c8f627fbd04c0941a1809049aae5adf" style="width: 100.0%; height: 100.0%;">         <b>Inner Mongolia Shunyuan Sheng Technology Co.</b><br>         <b>Location</b>: Bayannur<br>         <b>Capacity</b>: 20.0 kMT/yr<br>         <b>Investment</b>: ¥300.0M     </div>`)[0];
+                popup_d8736d7a5ad6c59228ce8c29ed537e93.setContent(html_4c8f627fbd04c0941a1809049aae5adf);
+            
+        
+
+        circle_marker_3b1ebff13c7218141e16f0412429e8bd.bindPopup(popup_d8736d7a5ad6c59228ce8c29ed537e93)
+        ;
+
+        
+    
+    
+            var circle_marker_79ff348b38ce772a1fd66f41cf04b9e2 = L.circleMarker(
+                [30.9057603, 117.6141351],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_044e74de873e5cf3d1570cc61b28b077 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a44446afc03dab1e506f5e3c0128eaa4 = $(`<div id="html_a44446afc03dab1e506f5e3c0128eaa4" style="width: 100.0%; height: 100.0%;">         <b>Anhui Si Pu New Material Co.</b><br>         <b>Location</b>: Tongling<br>         <b>Capacity</b>: 600.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_044e74de873e5cf3d1570cc61b28b077.setContent(html_a44446afc03dab1e506f5e3c0128eaa4);
+            
+        
+
+        circle_marker_79ff348b38ce772a1fd66f41cf04b9e2.bindPopup(popup_044e74de873e5cf3d1570cc61b28b077)
+        ;
+
+        
+    
+    
+            var circle_marker_4b05df319f15da6260d556c116f6e7c9 = L.circleMarker(
+                [30.9412541, 118.7540167],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_27f10129f4f36763dd0e3fdbe4ef5f15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_582495fa719f9f22924daf53300f328f = $(`<div id="html_582495fa719f9f22924daf53300f328f" style="width: 100.0%; height: 100.0%;">         <b>Anhui Huahao New Material Technology Co.</b><br>         <b>Location</b>: Xuancheng<br>         <b>Capacity</b>: 15.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_27f10129f4f36763dd0e3fdbe4ef5f15.setContent(html_582495fa719f9f22924daf53300f328f);
+            
+        
+
+        circle_marker_4b05df319f15da6260d556c116f6e7c9.bindPopup(popup_27f10129f4f36763dd0e3fdbe4ef5f15)
+        ;
+
+        
+    
+    
+            var circle_marker_94dd46dcefa529bb72d7ca176fb59a58 = L.circleMarker(
+                [30.3375612, 112.2337264],
+                {"bubblingMouseEvents": true, "color": null, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d);
+        
+    
+        var popup_a6b6130059ca8e04600bbc14f68d49be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70154943649ec1aabad32417c1ca3a56 = $(`<div id="html_70154943649ec1aabad32417c1ca3a56" style="width: 100.0%; height: 100.0%;">         <b>Hubei Mingshi High Purity Material Technology Co.</b><br>         <b>Location</b>: Jingzhou<br>         <b>Capacity</b>: 5.0 kMT/yr<br>         <b>Investment</b>: ¥nanM     </div>`)[0];
+                popup_a6b6130059ca8e04600bbc14f68d49be.setContent(html_70154943649ec1aabad32417c1ca3a56);
+            
+        
+
+        circle_marker_94dd46dcefa529bb72d7ca176fb59a58.bindPopup(popup_a6b6130059ca8e04600bbc14f68d49be)
+        ;
+
+        
+    
+    
+            marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d.addTo(map_61b27a4ca8249dea7c2515adbb5853c9);
+        
+    
+    var color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e = {};
+
+    
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.color = d3.scale.threshold()
+              .domain([55.0, 77.34268537074148, 99.68537074148296, 122.02805611222445, 144.3707414829659, 166.7134268537074, 189.0561122244489, 211.3987975951904, 233.74148296593185, 256.0841683366733, 278.4268537074148, 300.7695390781563, 323.1122244488978, 345.4549098196393, 367.7975951903808, 390.14028056112227, 412.4829659318637, 434.8256513026052, 457.1683366733467, 479.5110220440882, 501.85370741482967, 524.1963927855711, 546.5390781563126, 568.8817635270541, 591.2244488977956, 613.5671342685371, 635.9098196392786, 658.2525050100201, 680.5951903807616, 702.937875751503, 725.2805611222445, 747.623246492986, 769.9659318637274, 792.3086172344689, 814.6513026052104, 836.9939879759519, 859.3366733466934, 881.6793587174349, 904.0220440881764, 926.3647294589179, 948.7074148296593, 971.0501002004008, 993.3927855711423, 1015.7354709418838, 1038.0781563126252, 1060.4208416833667, 1082.7635270541082, 1105.1062124248497, 1127.4488977955912, 1149.7915831663327, 1172.1342685370741, 1194.4769539078156, 1216.8196392785571, 1239.1623246492986, 1261.5050100200401, 1283.8476953907816, 1306.190380761523, 1328.5330661322646, 1350.875751503006, 1373.2184368737476, 1395.561122244489, 1417.9038076152306, 1440.246492985972, 1462.5891783567133, 1484.9318637274548, 1507.2745490981963, 1529.6172344689378, 1551.9599198396793, 1574.3026052104208, 1596.6452905811623, 1618.9879759519038, 1641.3306613226453, 1663.6733466933867, 1686.0160320641282, 1708.3587174348697, 1730.7014028056112, 1753.0440881763527, 1775.3867735470942, 1797.7294589178357, 1820.0721442885772, 1842.4148296593187, 1864.7575150300602, 1887.1002004008017, 1909.4428857715432, 1931.7855711422847, 1954.1282565130261, 1976.4709418837676, 1998.8136272545091, 2021.1563126252504, 2043.4989979959919, 2065.8416833667334, 2088.184368737475, 2110.5270541082164, 2132.869739478958, 2155.2124248496993, 2177.555110220441, 2199.8977955911823, 2222.240480961924, 2244.5831663326653, 2266.925851703407, 2289.2685370741483, 2311.61122244489, 2333.9539078156313, 2356.296593186373, 2378.6392785571143, 2400.9819639278558, 2423.3246492985973, 2445.6673346693387, 2468.0100200400802, 2490.3527054108217, 2512.695390781563, 2535.0380761523047, 2557.380761523046, 2579.7234468937877, 2602.066132264529, 2624.4088176352707, 2646.751503006012, 2669.0941883767537, 2691.436873747495, 2713.7795591182366, 2736.122244488978, 2758.4649298597196, 2780.807615230461, 2803.1503006012026, 2825.492985971944, 2847.835671342685, 2870.1783567134266, 2892.521042084168, 2914.8637274549096, 2937.206412825651, 2959.5490981963926, 2981.891783567134, 3004.2344689378756, 3026.577154308617, 3048.9198396793586, 3071.2625250501, 3093.6052104208416, 3115.947895791583, 3138.2905811623245, 3160.633266533066, 3182.9759519038075, 3205.318637274549, 3227.6613226452905, 3250.004008016032, 3272.3466933867735, 3294.689378757515, 3317.0320641282565, 3339.374749498998, 3361.7174348697395, 3384.060120240481, 3406.4028056112224, 3428.745490981964, 3451.0881763527054, 3473.430861723447, 3495.7735470941884, 3518.11623246493, 3540.4589178356714, 3562.801603206413, 3585.1442885771544, 3607.486973947896, 3629.8296593186374, 3652.172344689379, 3674.5150300601204, 3696.857715430862, 3719.2004008016033, 3741.543086172345, 3763.8857715430863, 3786.228456913828, 3808.5711422845693, 3830.913827655311, 3853.2565130260523, 3875.599198396794, 3897.9418837675353, 3920.2845691382768, 3942.6272545090183, 3964.9699398797593, 3987.312625250501, 4009.6553106212423, 4031.9979959919838, 4054.3406813627253, 4076.6833667334668, 4099.026052104208, 4121.36873747495, 4143.711422845691, 4166.054108216433, 4188.396793587174, 4210.739478957916, 4233.082164328657, 4255.424849699399, 4277.76753507014, 4300.110220440882, 4322.452905811623, 4344.795591182365, 4367.138276553106, 4389.480961923848, 4411.823647294589, 4434.166332665331, 4456.509018036072, 4478.851703406814, 4501.194388777555, 4523.537074148297, 4545.879759519038, 4568.22244488978, 4590.565130260521, 4612.907815631263, 4635.250501002004, 4657.593186372746, 4679.935871743487, 4702.2785571142285, 4724.62124248497, 4746.9639278557115, 4769.306613226453, 4791.6492985971945, 4813.991983967936, 4836.3346693386775, 4858.677354709419, 4881.0200400801605, 4903.362725450902, 4925.705410821643, 4948.048096192385, 4970.390781563126, 4992.733466933868, 5015.076152304609, 5037.418837675351, 5059.761523046092, 5082.104208416834, 5104.446893787575, 5126.789579158317, 5149.132264529058, 5171.4749498998, 5193.817635270541, 5216.160320641283, 5238.503006012024, 5260.845691382766, 5283.188376753507, 5305.531062124249, 5327.87374749499, 5350.216432865732, 5372.559118236473, 5394.901803607215, 5417.244488977956, 5439.587174348698, 5461.929859719439, 5484.272545090181, 5506.615230460922, 5528.957915831664, 5551.300601202405, 5573.643286573147, 5595.985971943888, 5618.32865731463, 5640.67134268537, 5663.014028056112, 5685.356713426853, 5707.699398797595, 5730.042084168336, 5752.384769539078, 5774.727454909819, 5797.070140280561, 5819.412825651302, 5841.755511022044, 5864.098196392785, 5886.440881763527, 5908.783567134268, 5931.12625250501, 5953.468937875751, 5975.811623246493, 5998.154308617234, 6020.496993987976, 6042.839679358717, 6065.182364729459, 6087.5250501002, 6109.867735470942, 6132.210420841683, 6154.553106212425, 6176.895791583166, 6199.238476953908, 6221.581162324649, 6243.923847695391, 6266.266533066132, 6288.609218436874, 6310.951903807615, 6333.294589178357, 6355.637274549098, 6377.9799599198395, 6400.322645290581, 6422.6653306613225, 6445.008016032064, 6467.3507014028055, 6489.693386773547, 6512.0360721442885, 6534.37875751503, 6556.7214428857715, 6579.064128256513, 6601.406813627254, 6623.749498997996, 6646.092184368737, 6668.434869739479, 6690.77755511022, 6713.120240480962, 6735.462925851703, 6757.805611222445, 6780.148296593186, 6802.490981963928, 6824.833667334669, 6847.176352705411, 6869.519038076152, 6891.861723446894, 6914.204408817635, 6936.547094188377, 6958.889779559118, 6981.23246492986, 7003.575150300601, 7025.917835671343, 7048.260521042084, 7070.603206412826, 7092.945891783567, 7115.288577154309, 7137.63126252505, 7159.973947895792, 7182.316633266533, 7204.659318637275, 7227.002004008016, 7249.344689378758, 7271.687374749499, 7294.030060120241, 7316.372745490982, 7338.715430861724, 7361.058116232465, 7383.400801603207, 7405.743486973948, 7428.08617234469, 7450.428857715431, 7472.771543086173, 7495.114228456914, 7517.456913827656, 7539.799599198397, 7562.142284569139, 7584.48496993988, 7606.827655310622, 7629.170340681363, 7651.513026052105, 7673.855711422846, 7696.198396793588, 7718.541082164329, 7740.883767535071, 7763.226452905812, 7785.5691382765535, 7807.911823647295, 7830.2545090180365, 7852.597194388778, 7874.939879759519, 7897.28256513026, 7919.625250501002, 7941.967935871743, 7964.310621242485, 7986.653306613226, 8008.9959919839675, 8031.338677354709, 8053.6813627254505, 8076.024048096192, 8098.3667334669335, 8120.709418837675, 8143.0521042084165, 8165.394789579158, 8187.7374749498995, 8210.080160320642, 8232.422845691382, 8254.765531062125, 8277.108216432865, 8299.450901803608, 8321.793587174348, 8344.13627254509, 8366.478957915831, 8388.821643286574, 8411.164328657314, 8433.507014028057, 8455.849699398797, 8478.19238476954, 8500.53507014028, 8522.877755511023, 8545.220440881763, 8567.563126252506, 8589.905811623246, 8612.248496993989, 8634.59118236473, 8656.933867735472, 8679.276553106212, 8701.619238476955, 8723.961923847695, 8746.304609218438, 8768.647294589178, 8790.98997995992, 8813.332665330661, 8835.675350701404, 8858.018036072144, 8880.360721442887, 8902.703406813627, 8925.04609218437, 8947.38877755511, 8969.731462925853, 8992.074148296593, 9014.416833667334, 9036.759519038076, 9059.102204408817, 9081.44488977956, 9103.7875751503, 9126.130260521042, 9148.472945891783, 9170.815631262525, 9193.158316633266, 9215.501002004008, 9237.843687374749, 9260.186372745491, 9282.529058116232, 9304.871743486974, 9327.214428857715, 9349.557114228457, 9371.899799599198, 9394.24248496994, 9416.58517034068, 9438.927855711423, 9461.270541082164, 9483.613226452906, 9505.955911823647, 9528.298597194389, 9550.64128256513, 9572.983967935872, 9595.326653306613, 9617.669338677355, 9640.012024048096, 9662.354709418838, 9684.697394789579, 9707.040080160321, 9729.382765531062, 9751.725450901804, 9774.068136272545, 9796.410821643287, 9818.753507014027, 9841.09619238477, 9863.43887775551, 9885.781563126253, 9908.124248496993, 9930.466933867736, 9952.809619238476, 9975.152304609219, 9997.49498997996, 10019.837675350702, 10042.180360721442, 10064.523046092185, 10086.865731462925, 10109.208416833668, 10131.551102204408, 10153.89378757515, 10176.236472945891, 10198.579158316634, 10220.921843687374, 10243.264529058117, 10265.607214428857, 10287.9498997996, 10310.29258517034, 10332.635270541083, 10354.977955911823, 10377.320641282566, 10399.663326653306, 10422.006012024049, 10444.34869739479, 10466.691382765532, 10489.034068136272, 10511.376753507015, 10533.719438877755, 10556.062124248498, 10578.404809619238, 10600.74749498998, 10623.090180360721, 10645.432865731464, 10667.775551102204, 10690.118236472947, 10712.460921843687, 10734.80360721443, 10757.14629258517, 10779.488977955913, 10801.831663326653, 10824.174348697396, 10846.517034068136, 10868.859719438879, 10891.20240480962, 10913.545090180362, 10935.887775551102, 10958.230460921844, 10980.573146292585, 11002.915831663327, 11025.258517034068, 11047.60120240481, 11069.943887775551, 11092.286573146293, 11114.629258517034, 11136.971943887776, 11159.314629258517, 11181.65731462926, 11204.0])
+              .range(['#ffeda0ff', '#ffeda0ff', '#ffeda0ff', '#ffec9fff', '#ffec9fff', '#ffec9fff', '#ffeb9fff', '#ffeb9eff', '#ffeb9eff', '#ffea9eff', '#ffea9eff', '#ffe99dff', '#ffe99dff', '#ffe99dff', '#ffe89dff', '#ffe89cff', '#ffe89cff', '#ffe79cff', '#ffe79bff', '#ffe79bff', '#ffe69bff', '#ffe69bff', '#ffe69aff', '#ffe59aff', '#ffe59aff', '#ffe49aff', '#ffe499ff', '#ffe499ff', '#ffe399ff', '#ffe399ff', '#ffe398ff', '#ffe298ff', '#ffe298ff', '#ffe298ff', '#fee197ff', '#fee197ff', '#fee197ff', '#fee097ff', '#fee096ff', '#fedf96ff', '#fedf96ff', '#fedf96ff', '#fede95ff', '#fede95ff', '#fede95ff', '#fedd95ff', '#fedd94ff', '#fedd94ff', '#fedc94ff', '#fedc94ff', '#fedc93ff', '#fedb93ff', '#fedb93ff', '#feda92ff', '#feda92ff', '#feda92ff', '#fed992ff', '#fed991ff', '#fed991ff', '#fed891ff', '#fed891ff', '#fed890ff', '#fed790ff', '#fed790ff', '#fed790ff', '#fed68fff', '#fed68fff', '#fdd58fff', '#fdd58fff', '#fdd58eff', '#fdd48eff', '#fdd48eff', '#fdd48eff', '#fdd38dff', '#fdd38dff', '#fdd38dff', '#fdd28dff', '#fdd28cff', '#fdd18cff', '#fdd18cff', '#fdd18cff', '#fdd08bff', '#fdd08bff', '#fdd08bff', '#fdcf8aff', '#fdcf8aff', '#fdcf8aff', '#fdce8aff', '#fdce89ff', '#fdce89ff', '#fdcd89ff', '#fdcd89ff', '#fdcc88ff', '#fdcc88ff', '#fdcc88ff', '#fdcb88ff', '#fdcb87ff', '#fdcb87ff', '#fdca87ff', '#fdca87ff', '#fcca86ff', '#fcc986ff', '#fcc986ff', '#fcc986ff', '#fcc885ff', '#fcc885ff', '#fcc785ff', '#fcc785ff', '#fcc784ff', '#fcc684ff', '#fcc684ff', '#fcc684ff', '#fcc583ff', '#fcc583ff', '#fcc583ff', '#fcc483ff', '#fcc482ff', '#fcc482ff', '#fcc382ff', '#fcc381ff', '#fcc281ff', '#fcc281ff', '#fcc281ff', '#fcc180ff', '#fcc180ff', '#fcc180ff', '#fcc080ff', '#fcc07fff', '#fcc07fff', '#fcbf7fff', '#fcbf7fff', '#fcbf7eff', '#fcbe7eff', '#fbbe7eff', '#fbbd7eff', '#fbbd7dff', '#fbbd7dff', '#fbbc7dff', '#fbbc7dff', '#fbbc7cff', '#fbbb7cff', '#fbbb7cff', '#fbbb7cff', '#fbba7bff', '#fbba7bff', '#fbba7bff', '#fbb97bff', '#fbb97aff', '#fbb87aff', '#fbb87aff', '#fbb879ff', '#fbb779ff', '#fbb779ff', '#fbb779ff', '#fbb678ff', '#fbb678ff', '#fbb678ff', '#fbb578ff', '#fbb577ff', '#fbb477ff', '#fbb477ff', '#fbb477ff', '#fbb376ff', '#fbb376ff', '#fbb376ff', '#fbb276ff', '#fab275ff', '#fab275ff', '#fab175ff', '#fab175ff', '#fab174ff', '#fab074ff', '#fab074ff', '#faaf74ff', '#faaf73ff', '#faaf73ff', '#faae73ff', '#faae73ff', '#faae72ff', '#faad72ff', '#faad72ff', '#faad72ff', '#faac71ff', '#faac71ff', '#faac71ff', '#faab70ff', '#faab70ff', '#faaa70ff', '#faaa70ff', '#faaa6fff', '#faa96fff', '#faa96fff', '#faa96fff', '#faa86eff', '#faa86eff', '#faa86eff', '#faa76eff', '#faa76dff', '#faa76dff', '#f9a66dff', '#f9a66dff', '#f9a56cff', '#f9a56cff', '#f9a56cff', '#f9a46cff', '#f9a46bff', '#f9a46bff', '#f9a36bff', '#f9a36bff', '#f9a36aff', '#f9a26aff', '#f9a26aff', '#f9a26aff', '#f9a169ff', '#f9a169ff', '#f9a069ff', '#f9a069ff', '#f9a068ff', '#f99f68ff', '#f99f68ff', '#f99f67ff', '#f99e67ff', '#f99e67ff', '#f99e67ff', '#f99d66ff', '#f99d66ff', '#f99c66ff', '#f99c66ff', '#f99c65ff', '#f99b65ff', '#f99b65ff', '#f99b65ff', '#f89a64ff', '#f89a64ff', '#f89a64ff', '#f89964ff', '#f89963ff', '#f89963ff', '#f89863ff', '#f89863ff', '#f89762ff', '#f89762ff', '#f89762ff', '#f89662ff', '#f89661ff', '#f89661ff', '#f89561ff', '#f89561ff', '#f89560ff', '#f89460ff', '#f89460ff', '#f8945fff', '#f8935fff', '#f8935fff', '#f8925fff', '#f8925eff', '#f8925eff', '#f8915eff', '#f8915eff', '#f8915dff', '#f8905dff', '#f8905dff', '#f8905dff', '#f88f5cff', '#f88f5cff', '#f88f5cff', '#f78e5cff', '#f78e5bff', '#f78d5bff', '#f78d5bff', '#f78d5bff', '#f78c5aff', '#f78c5aff', '#f78c5aff', '#f78b5aff', '#f78b59ff', '#f78b59ff', '#f78a59ff', '#f78a59ff', '#f78a58ff', '#f78958ff', '#f78958ff', '#f78858ff', '#f78857ff', '#f78857ff', '#f78757ff', '#f78756ff', '#f78756ff', '#f78656ff', '#f78656ff', '#f78655ff', '#f78555ff', '#f78555ff', '#f78555ff', '#f78454ff', '#f78454ff', '#f78354ff', '#f78354ff', '#f78353ff', '#f68253ff', '#f68253ff', '#f68253ff', '#f68152ff', '#f68152ff', '#f68152ff', '#f68052ff', '#f68051ff', '#f67f51ff', '#f67f51ff', '#f67f51ff', '#f67e50ff', '#f67e50ff', '#f67e50ff', '#f67d50ff', '#f67d4fff', '#f67d4fff', '#f67c4fff', '#f67c4eff', '#f67c4eff', '#f67b4eff', '#f67b4eff', '#f67a4dff', '#f67a4dff', '#f67a4dff', '#f6794dff', '#f6794cff', '#f6794cff', '#f6784cff', '#f6784cff', '#f6784bff', '#f6774bff', '#f6774bff', '#f5774bff', '#f5764aff', '#f5764aff', '#f5754aff', '#f5754aff', '#f57549ff', '#f57449ff', '#f57449ff', '#f57449ff', '#f57348ff', '#f57348ff', '#f57348ff', '#f57248ff', '#f57247ff', '#f57247ff', '#f57147ff', '#f57147ff', '#f57046ff', '#f57046ff', '#f57046ff', '#f56f45ff', '#f56f45ff', '#f56f45ff', '#f56e45ff', '#f56e44ff', '#f56e44ff', '#f56d44ff', '#f56d44ff', '#f56d43ff', '#f56c43ff', '#f56c43ff', '#f56b43ff', '#f56b42ff', '#f46b42ff', '#f46a42ff', '#f46a42ff', '#f46a41ff', '#f46941ff', '#f46941ff', '#f46941ff', '#f46840ff', '#f46840ff', '#f46740ff', '#f46740ff', '#f4673fff', '#f4663fff', '#f4663fff', '#f4663fff', '#f4653eff', '#f4653eff', '#f4653eff', '#f4643dff', '#f4643dff', '#f4643dff', '#f4633dff', '#f4633cff', '#f4623cff', '#f4623cff', '#f4623cff', '#f4613bff', '#f4613bff', '#f4613bff', '#f4603bff', '#f4603aff', '#f4603aff', '#f45f3aff', '#f35f3aff', '#f35f39ff', '#f35e39ff', '#f35e39ff', '#f35d39ff', '#f35d38ff', '#f35d38ff', '#f35c38ff', '#f35c38ff', '#f35c37ff', '#f35b37ff', '#f35b37ff', '#f35b37ff', '#f35a36ff', '#f35a36ff', '#f35a36ff', '#f35936ff', '#f35935ff', '#f35835ff', '#f35835ff', '#f35834ff', '#f35734ff', '#f35734ff', '#f35734ff', '#f35633ff', '#f35633ff', '#f35633ff', '#f35533ff', '#f35532ff', '#f35532ff', '#f35432ff', '#f35432ff', '#f35331ff', '#f25331ff', '#f25331ff', '#f25231ff', '#f25230ff', '#f25230ff', '#f25130ff', '#f25130ff', '#f2512fff', '#f2502fff', '#f2502fff', '#f2502fff', '#f24f2eff', '#f24f2eff', '#f24e2eff', '#f24e2eff', '#f24e2dff', '#f24d2dff', '#f24d2dff', '#f24d2dff', '#f24c2cff', '#f24c2cff', '#f24c2cff', '#f24b2bff', '#f24b2bff', '#f24a2bff', '#f24a2bff', '#f24a2aff', '#f2492aff', '#f2492aff', '#f2492aff', '#f24829ff', '#f24829ff', '#f24829ff', '#f14729ff', '#f14728ff', '#f14728ff', '#f14628ff', '#f14628ff', '#f14527ff', '#f14527ff', '#f14527ff', '#f14427ff', '#f14426ff', '#f14426ff', '#f14326ff', '#f14326ff', '#f14325ff', '#f14225ff', '#f14225ff', '#f14225ff', '#f14124ff', '#f14124ff', '#f14024ff', '#f14023ff', '#f14023ff', '#f13f23ff', '#f13f23ff', '#f13f22ff', '#f13e22ff', '#f13e22ff', '#f13e22ff', '#f13d21ff', '#f13d21ff', '#f13d21ff', '#f13c21ff', '#f13c20ff', '#f13b20ff', '#f03b20ff', '#f03b20ff']);
+    
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x = d3.scale.linear()
+              .domain([55.0, 11204.0])
+              .range([0, 450 - 50]);
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.legend = L.control({position: 'topright'});
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.legend.addTo(map_61b27a4ca8249dea7c2515adbb5853c9);
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.xAxis = d3.svg.axis()
+        .scale(color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([55.0, 11204.0]);
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.g = color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.g.selectAll("rect")
+        .data(color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x(color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.color.domain()[i - 1]) : color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x.range()[0],
+            x1: i < color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.color.domain().length ? color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x(color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.color.domain()[i]) : color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.g.call(color_map_3df4a36fc0ae7d9f3d4d6f250a64f13e.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("invested money (\u00a5M)");
+    
+            tile_layer_29e66e94a9ea2a3e97c3726eadc9292d.addTo(map_61b27a4ca8249dea7c2515adbb5853c9);
+        
+    
+            marker_cluster_d2443b86f82afca7a7ad4c8cf8fee34d.addTo(map_61b27a4ca8249dea7c2515adbb5853c9);
+        
+</script>
+</html>
